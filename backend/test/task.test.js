@@ -13,8 +13,9 @@ describe('GET /api/tasks', () => {
 
   it('should return an object and tasks props', async () => { 
     const res = await request(app).get('/api/tasks');
-    expect(typeof res.body.tasks).toBe('object');
+    expect(typeof res.body.tasks).toBe('object')
     expect(res.body).toHaveProperty('tasks');
+        console.log(res.body.tasks, "Data Seeds");
   });
 });
 
