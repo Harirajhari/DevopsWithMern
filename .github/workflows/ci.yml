@@ -23,7 +23,7 @@ jobs:
           node-version: '18'
 
       - name: Wait for MongoDB to be ready
-      - run: |
+        run: |
             until nc -z localhost 27017; do
               echo "Waiting for MongoDB to start..."
               sleep 2
